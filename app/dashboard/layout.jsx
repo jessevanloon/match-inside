@@ -1,6 +1,7 @@
 import React from 'react';
 import DashboardMenu from '@/components/Dashboard-menu';
 import DashboardTopMenu from '@/components/Dashboard-top-menu';
+import Title from '@/components/Title';
 
 const layout = ({ children }) => {
   return (
@@ -8,7 +9,7 @@ const layout = ({ children }) => {
       <DashboardTopMenu />
       <div class="grid grid-cols-[auto,1fr] h-full">
         <DashboardMenu />
-        {children}
+        <div className="p-10">{children}</div>
       </div>
     </div>
   );

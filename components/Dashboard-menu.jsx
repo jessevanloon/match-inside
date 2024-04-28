@@ -25,6 +25,16 @@ const DashboardMenu = () => {
           <li className="">
             <Link
               className={`link ${
+                pathname === '/dashboard' ? 'active' : ''
+              } rounded-none no-underline	`}
+              href="/dashboard"
+            >
+              Overview
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              className={`link ${
                 pathname === '/dashboard/matches' ? 'active' : ''
               } rounded-none no-underline	`}
               href="/dashboard/matches"
