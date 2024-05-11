@@ -1,4 +1,4 @@
-// File: /Users/shopmonkey/Desktop/match-inside/app/dashboard/layout.jsx
+// File: /Users/shopmonkey/Documents/projecten/match-inside/app/dashboard/layout.jsx
 import * as entry from '../../../../app/dashboard/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
