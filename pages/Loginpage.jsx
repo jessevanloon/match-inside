@@ -21,18 +21,26 @@ const Loginpage = () => {
             <form>
               <div className="flex flex-col gap-3.5 mt-10	">
                 <div className="flex flex-col gap-1 w-full">
-                  <label className="font-semibold">Username</label>
+                  <label className="font-semibold" htmlFor="email"></label>
                   <input
                     className="w-full py-2.5 px-3.5	rounded-lg	bg-grey"
-                    type="text"
-                    placeholder="Username.."></input>
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                  />
                 </div>
                 <div className="flex flex-col gap-1 w-full">
-                  <label className="font-semibold">Password</label>
+                  <label className="font-semibold" htmlFor="password">
+                    Password:
+                  </label>
                   <input
                     className="w-full py-2.5 px-3.5	rounded-lg	bg-grey"
-                    type="text"
-                    placeholder="Password.."></input>
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                  />
                 </div>
                 <div className="w-full flex justify-between	">
                   <a>Remember me</a>
@@ -42,9 +50,17 @@ const Loginpage = () => {
                   <a className="w-full bg-accent-orange flex justify-center items-center p-2 font-semibold">
                     Sign in
                   </a>
+                  {/* <button
+                    className="w-full bg-accent-orange flex justify-center items-center p-2 font-semibold"
+                    formAction={login}>
+                    Log in
+                  </button> */}
                   <div className="text-center font-semibold">
                     Don’t have a account?{" "}
-                    <span className="text-accent-orange">Register now</span>
+                    {/* <span className="text-accent-orange">Register now</span> */}
+                    {/* <button className="text-accent-orange" formAction={signup}>
+                      Sign up
+                    </button> */}
                   </div>
                 </div>
               </div>

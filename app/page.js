@@ -9,9 +9,5 @@ const poppins = Poppins({
 });
 
 export default function Home() {
-  return (
-    <main className="">
-      <Loginpage />
-    </main>
-  );
+  return <main className="">{/* <Loginpage /> */}</main>;
 }
