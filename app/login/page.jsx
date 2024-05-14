@@ -6,11 +6,11 @@ export default function LoginPage() {
       <div className="container mx-auto h-full">
         <div className="flex w-full h-full justify-center items-center">
           <div className="bg-light-dark-background p-9 rounded-xl	border-4 border-accent-green border-solid min-w-[550px]">
-            <div className="flex flex-col gap-3.5">
+            <div className="flex flex-col gap-3">
               <div className="text-5xl font-semibold text-center">
                 Match <span className="text-accent-orange">Inside</span>
               </div>
-              <div className="flex flex-col gap-2.5">
+              <div className="flex flex-col gap-2">
                 <div className="text-center">Welcome back!</div>
                 <div className="text-center">
                   Let's start pushing your limits!
@@ -19,7 +19,7 @@ export default function LoginPage() {
             </div>
 
             <form>
-              <div className="flex flex-col gap-3.5 mt-10	">
+              <div className="flex flex-col gap-3 mt-10	">
                 <div className="flex flex-col gap-1 w-full">
                   <label className="font-semibold" htmlFor="email">
                     Email
@@ -37,7 +37,7 @@ export default function LoginPage() {
                     Password:
                   </label>
                   <input
-                    className="w-full py-2.5 px-3.5	rounded-lg	bg-grey"
+                    className="w-full py-2 px-3	rounded-lg	bg-grey"
                     id="password"
                     name="password"
                     type="password"
@@ -48,7 +48,7 @@ export default function LoginPage() {
                   <a>Remember me</a>
                   <a className="text-accent-orange">Forgot password?</a>
                 </div>
-                <div className="w-full flex flex-col gap-4	 mt-8	">
+                <div className="w-full flex flex-col gap-4	 mt-4	">
                   <button
                     className="w-full bg-accent-orange flex justify-center items-center p-2 font-semibold"
                     formAction={login}>
