@@ -18,10 +18,15 @@
 
 body {
   color: #f0f0f0;
-  background: radial-gradient(circle at left, #19362d, #111111);
+  /* background: radial-gradient(circle at left, #19362d, #111111); */
   margin: 0;
   height: 100%;
   overflow: hidden;
+  min-height: 100vh;
+}
+
+body {
+  @apply bg-dark-background;
 }
 
 @layer utilities {
@@ -32,5 +37,5 @@ body {
 
 /* Login page styling */
 #page-login {
-  background: radial-gradient(circle at left, #19362d, #111111);
+  background: radial-gradient(circle at left, #19362d, #111111) !important;
 }
